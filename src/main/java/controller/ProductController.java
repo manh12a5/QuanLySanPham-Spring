@@ -67,4 +67,13 @@ public class ProductController {
         return new ModelAndView("redirect:/products");
     }
 
+    //Search
+    @PostMapping("")
+    public ModelAndView modelAndView(@RequestParam("name") String name) {
+        ModelAndView modelAndView = new ModelAndView("view");
+        List<Product> productList = productService.findByName(name);
+        modelAndView.addObject("view", productList);
+        return modelAndView;
+    }
+
 }

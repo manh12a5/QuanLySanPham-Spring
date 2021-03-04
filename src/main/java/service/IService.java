@@ -1,5 +1,7 @@
 package service;
 
+import model.Product;
+
 import java.util.List;
 
 public interface IService<E> {
@@ -13,5 +15,7 @@ public interface IService<E> {
     void update(int id, E e);
 
     void remove(int id);
+
+    List<E> findByName(String name);
 
 }

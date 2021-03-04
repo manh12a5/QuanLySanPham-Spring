@@ -2,13 +2,13 @@ config/AppInit.java
  config.AppInit
 service/IService.java
  service.IService
-service/product/IProductService.java
- service.product.IProductService
-model/Product.java
- model.Product
-service/product/ProductService.java
- service.product.ProductService
-config/AppConfiguration.java
- config.AppConfiguration
 controller/ProductController.java
  controller.ProductController
+model/Product.java
+ model.Product
+service/product/IProductService.java
+ service.product.IProductService
+config/AppConfiguration.java
+ config.AppConfiguration
+service/product/ProductService.java
+ service.product.ProductService
